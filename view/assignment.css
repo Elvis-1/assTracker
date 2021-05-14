@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+}
+div.card{
+    margin: 5px 50px; 
+}
+div.light_blue{
+    background-color: blue;
+}
+
+.form-row{
+    text-align: right;
+}

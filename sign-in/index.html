@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Signin Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    
+
+   
+  </head>
+  <body class="">
+    
+<section class="list">
+ <header class="header">
+   <div class="container">
+     <div class="row">
+      <form action="." method="GET" id="list-header" class="form-horizontal">
+        <input type="hidden" name="action" value="list_assignments">
+        <div class="col-md-2"></div>
+        <div class="col-md-6 form-group" ><select class="form-control" name="course_id" id="" required>
+          <option value="0" >View All</option>
+          <?php foreach($courses as $course): ?>
+            <?php if($course_id == $course['course_id']){ ?>
+            <option value="<?php $course['course_id'] ?>" selected>
+            <?php } else{ ?>
+              <option value="<?php $course['course_id'] ?>"> 
+              <?php } ?>
+              <?php $course['course_name'] ?>
+            </option>
+            <?php endforeach; ?>
+        </select></div>
+        <div class="col-md-4"> <button class="btn btn-success">Go</button></div>
+        <div class="col-md-2"></div>
+      </form>
+     </div>
+   </div>
+  
+ </header>
+</section> -->
+
+ 
+    
+  </body>
+</html>
